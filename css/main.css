@@ -1,1 +1,47 @@
-/*# sourceMappingURL=main.css.map */
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 72px 173px 1fr 822px;
+  grid-template-rows: 72px 73px 1fr;
+  grid-template-areas: "side-bar top-footer top-footer top-footer" "side-bar watch-list search instrument" "side-bar watch-list assets-list trade";
+}
+
+#side-bar {
+  grid-area: side-bar;
+  justify-self: end;
+}
+
+#top-footer {
+  grid-area: top-footer;
+}
+
+#watch-list {
+  grid-area: watch-list;
+}
+
+#search {
+  grid-area: search;
+}
+
+#instrument {
+  grid-area: instrument;
+}
+
+#assets-list {
+  grid-area: assets-list;
+}
+
+#trade {
+  grid-area: trade;
+}
+
+body {
+  background-color: #FFFFFF;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+
+.test {
+  padding: 10px;
+  border: 1px solid black;
+}/*# sourceMappingURL=main.css.map */
