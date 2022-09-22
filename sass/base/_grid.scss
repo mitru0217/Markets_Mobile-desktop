@@ -1,5 +1,5 @@
 .container {
-    height: 100%;
+    height: 100vh;
     display: grid;
     grid-template-columns: 72px 173px 1fr 822px;
     grid-template-rows: 72px 73px 1fr;
@@ -15,7 +15,7 @@ justify-self: end;
 #top-footer {
 grid-area: top-footer;
 }
-#watch-list {
+#watch {
   grid-area: watch-list;
 }
 #search {
@@ -24,7 +24,7 @@ grid-area: top-footer;
 #instrument {
 grid-area: instrument;
 }
-#assets-list {
+#assets {
     grid-area: assets-list;
 }
 #trade {
