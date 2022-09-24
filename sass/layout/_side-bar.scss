@@ -27,20 +27,43 @@
     &:hover, :focus  {
         background-color: #8A8B8B;
     };
+    &:active  {
+        background-color: $active-color;
+    } 
     cursor: pointer;
 }
 
 .trade__icon {
+    display: block;
     margin-top: 9px;
     margin-right: 20px;
     margin-left: 20px;
-    margin-bottom: 31px;
-    fill: #FFFFFF;
+    margin-bottom: 7px;
+    fill: $text-color-secondary;
+    .side-bar__button:hover & {
+        fill: $button-text-color  
+    };
+
+}
+.portfolio__icon {
+    display: block;
+    margin-top: 9px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 7px;
+   stroke: $text-color-secondary;
+
+   .side-bar__button:hover & {
+    stroke: $button-text-color  
+}; 
 }
 .side-bar__button-text {
     @extend %p;
     font-family: inherit;
     font-weight: 500;
     font-size: 11px;
-    color: $button-text-color;
+    color: $text-color-secondary;
+    &:hover  {
+        color: $button-text-color  
+    }; 
 }

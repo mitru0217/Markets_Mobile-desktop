@@ -1,8 +1,8 @@
 .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 72px 173px 1fr 822px;
-    grid-template-rows: 72px 73px 1fr;
+    grid-template-columns: 72px 173px 372px 1fr;
+    grid-template-rows: 72px 72px 1fr;
      grid-template-areas: 
      "side-bar top-footer top-footer top-footer"
      "side-bar watch-list search instrument"

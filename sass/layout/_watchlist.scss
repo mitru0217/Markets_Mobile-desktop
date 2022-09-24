@@ -1,0 +1,55 @@
+
+
+
+.watch__head {
+    height: 72px;
+   padding-top: 24px;
+   padding-left: 24px;
+    border-right: 1px solid $border-color ;
+    border-bottom: 1px solid $border-color;
+}
+.watch__title {
+    @extend %h2;
+    font-size: 14px;
+    font-weight: 700;
+    color: $title-color-secondary; 
+}
+.watch__list {
+    @extend %ul;
+    border-right: 1px solid $border-color;
+}
+
+.watch-item__link {
+    @extend %a;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 42px;
+    cursor: pointer;
+    &:hover {
+        background-color: $bgc-action;
+    }
+}
+.watch-item__svg {
+    margin-right: 13px;
+    stroke: $stoke-icon;
+    .watch-item__link:hover & {
+        stroke: $active-color;
+    } 
+}
+.watch-item__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $text-color;
+    .watch-item__link:hover & {
+        color: $active-color;
+    }
+}
+.watch-item__svg-fill {
+    margin-right: 13px;
+    fill: $stoke-icon;;
+    .watch-item__link:hover & {
+        fill:$active-color;
+    } 
+}

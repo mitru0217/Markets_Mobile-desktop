@@ -1,22 +1,31 @@
+.watch__title,
 .side-bar__button-text,
+.top-footer__button,
 .side-bar__button {
   margin: 0;
   padding: 0;
   border: none;
 }
 
-.side-bar__list {
+.watch__list, .side-bar__list {
   margin: 0;
   padding: 0;
   border: none;
   list-style: none;
 }
 
+.watch-item__link {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+}
+
 .container {
   height: 100vh;
   display: grid;
-  grid-template-columns: 72px 173px 1fr 822px;
-  grid-template-rows: 72px 73px 1fr;
+  grid-template-columns: 72px 173px 372px 1fr;
+  grid-template-rows: 72px 72px 1fr;
   grid-template-areas: "side-bar top-footer top-footer top-footer" "side-bar watch-list search instrument" "side-bar watch-list assets-list trade";
 }
 
@@ -79,6 +88,7 @@ body {
 }
 
 .side-bar__button {
+  display: block;
   width: 60px;
   height: 60px;
   background-color: #1D1D20;
@@ -94,18 +104,156 @@ body {
 .side-bar__button:hover, .side-bar__button :focus {
   background-color: #8A8B8B;
 }
+.side-bar__button:active {
+  background-color: #045DE9;
+}
 
 .trade__icon {
+  display: block;
   margin-top: 9px;
   margin-right: 20px;
   margin-left: 20px;
-  margin-bottom: 31px;
+  margin-bottom: 7px;
+  fill: #8A8B8B;
+}
+.side-bar__button:hover .trade__icon {
   fill: #FFFFFF;
+}
+
+.portfolio__icon {
+  display: block;
+  margin-top: 9px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 7px;
+  stroke: #8A8B8B;
+}
+.side-bar__button:hover .portfolio__icon {
+  stroke: #FFFFFF;
 }
 
 .side-bar__button-text {
   font-family: inherit;
   font-weight: 500;
   font-size: 11px;
+  color: #8A8B8B;
+}
+.side-bar__button-text:hover {
   color: #FFFFFF;
+}
+
+#top-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FAFAFA;
+}
+
+.logo {
+  display: block;
+  margin-left: 24px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.top-footer__form {
+  margin-right: 43px;
+  margin-left: auto;
+}
+
+.top-footer__select {
+  margin: 0;
+  padding: 0;
+  margin-right: 5px;
+  width: 212px;
+  height: 36px;
+  border: 1px solid #E8E8E8;
+  border-radius: 4px;
+}
+
+.top-footer__button {
+  width: 120px;
+  height: 36px;
+  background-color: #161717;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 8px;
+}
+
+.top-footer__icon {
+  display: block;
+  margin-right: 24px;
+}
+
+.watch__head {
+  height: 72px;
+  padding-top: 24px;
+  padding-left: 24px;
+  border-right: 1px solid #F3F3F3;
+  border-bottom: 1px solid #F3F3F3;
+}
+
+.watch__title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #A2A2A2;
+}
+
+.watch__list {
+  border-right: 1px solid #F3F3F3;
+}
+
+.watch-item__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 25px;
+  padding-right: 42px;
+  cursor: pointer;
+}
+.watch-item__link:hover {
+  background-color: rgba(4, 93, 233, 0.07);
+}
+
+.watch-item__svg {
+  margin-right: 13px;
+  stroke: #A2A2A2;
+}
+.watch-item__link:hover .watch-item__svg {
+  stroke: #045DE9;
+}
+
+.watch-item__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #161717;
+}
+.watch-item__link:hover .watch-item__text {
+  color: #045DE9;
+}
+
+.watch-item__svg-fill {
+  margin-right: 13px;
+  fill: #A2A2A2;
+}
+.watch-item__link:hover .watch-item__svg-fill {
+  fill: #045DE9;
+}
+
+#search {
+  padding-top: 18px;
+  padding-bottom: 16px;
+  padding-right: 17px;
+  padding-left: 16px;
 }/*# sourceMappingURL=main.css.map */

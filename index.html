@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="container">
-        <section id="side-bar" class="test">
+        <section id="side-bar">
             <h2 class="visually-hidden">side-bar</h2>
             <ul class="side-bar__list">
                 <li class="side-bar__list">
@@ -27,23 +27,128 @@
                     </button>
                 </li>
                 <li >
-                    <button type="button" class="side-bar__button" aria-label ="switch menu">
+                    <button type="button" class="side-bar__button side-bar__button-text" aria-label ="switch menu">
+                        
                         <svg  class = "trade__icon" width ="24" height ="24">
-                            <use href="./icon/sprite.svg#iicon-trending1"></use>    
+                            <use href="./icon/sprite.svg#icon-trending1"></use>    
                         </svg>
-                        <p class="side-bar__button-text">Trade</p> 
+                        Trade
                     </button>
                 </li>
-                <li></li>
+                <li>
+                    <button type="button" class="side-bar__button side-bar__button-text" aria-label ="switch menu">
+                        <svg  class = "portfolio__icon" width ="24" height ="24">
+                            <use href="./icon/sprite.svg#icon-briefcase"></use>
+                        </svg>
+                        Portfolio 
+                    </button>
+                </li>
             </ul>
         </section>
-        <section id="top-footer" class="test">
+        <section id="top-footer">
+            <h2 class="visually-hidden">top-footer</h2>
+            <svg width="180" height="23" class="logo">
+                <use href="./icon/sprite.svg#icon-Logo"></use>
+            </svg>
+          <form name ="deposit" class="top-footer__form">
+            <select name="deposit" id="deposit-select" class="top-footer__select">
+                <option  value="1.500" label="Stocks $ 1,500">Stocks $ 1,500</option>
+                <option value="1.600" label="Stocks $ 1,600">Stocks $ 1,600</option>
+                <option value="1.700" label="Stocks $ 1,700">Stocks $ 1,700</option>
+                <option value="1.800" label="Stocks $ 1,800">Stocks $ 1,800</option>
+                <option value="1.900" label="Stocks $ 1,900">Stocks $ 1,900</option>
+                <option value="2000" label="Stocks $ 2000">Stocks $ 2000</option>
+            </select>
+            <button type="submit" for="deposit-select" class="top-footer__button">Deposit</button>
+          </form>
+          <svg width="40" height="40" class="top-footer__icon">
+            <use href="./icon/sprite.svg#icon-notification"></use>
+          </svg>
+        </section>
+        <section id="watch">
+            <div class="watch__head">
+                <h2 class="watch__title">WATCHLIST</h2>
+            </div>
+            <ul class="watch__list">
+                <li class="watch__item">
+                    <a href="#" class="watch-item__link">
+                        <svg width="20" height="20" class="watch-item__svg">
+                            <use href="./icon/sprite.svg#icon-star"></use>
+                        </svg>
+                        <p class="watch-item__text">Favourites</p>
+                    </a>
+                </li>
+                <li class="watch__item">
+                    <a href="#" class="watch-item__link">
+                        <svg width="24" height="24" class="watch-item__svg">
+                            <use href="./icon/sprite.svg#icon-lightning-bolt"></use>
+                        </svg>
+                        <p class="watch-item__text">Popular</p>
+                    </a>
+                </li>
+                <li class="watch__item">
+                    <a href="#" class="watch-item__link">
+                        <svg width="24" height="24" class="watch-item__svg-fill">
+                            <use href="./icon/sprite.svg#icon-trending"></use>
+                        </svg>
+                        <p class="watch-item__text">Top Mover</p>
+                    </a>
+                </li>
+                <li class="watch__item">
+                    <a href="#" class="watch-item__link">
+                        <svg width="24" height="24" class="watch-item__svg watch-item__svg-fill">
+                            <use href="./icon/sprite.svg#icon-BG-Color5"></use>
+                        </svg>
+                        <p class="watch-item__text">Shares</p>
+                    </a>
+                </li>
+                <li class="watch__item">
+                    <a href="#" class="watch-item__link">
+                        <svg width="24" height="24" class="watch-item__svg watch-item__svg-fill">
+                            <use href="./icon/sprite.svg#icon-ethereum-1"></use>
+                        </svg>
+                        <p class="watch-item__text">Crypto</p>
+                    </a>
+                </li>
+                <li class="watch__item">
+                    <a href="#" class="watch-item__link">
+                        <svg width="24" height="24" class="watch-item__svg watch-item__svg-fill">
+                            <use href="./icon/symbol-defs.svg#icon-fx-1"></use>
+                        </svg>
+                        <p class="watch-item__text">FX</p>
+                    </a> 
+                </li>
+                <li class="watch__item">
+                    <a href="#" class="watch-item__link">
+                        <svg width="24" height="24" class="watch-item__svg watch-item__svg-fill">
+                            <use href="./icon/symbol-defs2.svg#icon-database2"></use>
+                        </svg>
+                        <p class="watch-item__text">Commodities</p>
+                    </a> 
+                </li>
+                <li class="watch__item">
+                    <a href="#" class="watch-item__link">
+                        <svg width="24" height="24" class="watch-item__svg">
+                            <use href="./icon/sprite.svg#icon-calendar"></use>
+                        </svg>
+                        <p class="watch-item__text">Weekend</p>
+                    </a> 
+                </li>
+                <li class="watch__item">
+                    <a href="#" class="watch-item__link">
+                        <svg width="24" height="24" class="watch-item__svg watch-item__svg-fill">
+                            <use href="./icon/sprite.svg#icon-new"></use>
+                        </svg>
+                        <p class="watch-item__text">New</p>
+                    </a> 
+                </li>
+            </ul>
 
         </section>
-        <section id="watch" class="test">
-            
-        </section>
       <section id="search" class="tast">
+        <form name="search">
+            <input type="text" class="search__input" placeholder="&#xe900 Search">
+        </form>
 
       </section>
        <sectuon id="instrument" class="test"></sectuon>
