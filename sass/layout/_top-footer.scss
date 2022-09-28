@@ -5,7 +5,11 @@
     background-color: $bgc-top-footer;
 
 }
-
+.top-footer__logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
 .logo {
     display: block;
     margin-left: 24px;
@@ -35,6 +39,7 @@
     font-weight: 500;
     font-size: 14px;
     border-radius: 8px;
+    cursor: pointer;
 }
 .top-footer__icon {
     display: block;

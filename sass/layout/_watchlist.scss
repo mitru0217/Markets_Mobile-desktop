@@ -1,6 +1,4 @@
 
-
-
 .watch__head {
     height: 72px;
    padding-top: 24px;
@@ -24,7 +22,6 @@
     display: flex;
     align-items: center;
     padding-left: 25px;
-    padding-right: 42px;
     cursor: pointer;
     &:hover {
         background-color: $bgc-action;
@@ -40,7 +37,7 @@
 .watch-item__text {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 24px;
     color: $text-color;
     .watch-item__link:hover & {
         color: $active-color;

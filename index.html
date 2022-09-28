@@ -47,9 +47,11 @@
         </section>
         <section id="top-footer">
             <h2 class="visually-hidden">top-footer</h2>
-            <svg width="180" height="23" class="logo">
-                <use href="./icon/sprite.svg#icon-Logo"></use>
-            </svg>
+            <a href="#" class="top-footer__logo">
+                <svg width="180" height="23" class="logo">
+                    <use href="./icon/sprite.svg#icon-Logo"></use>
+                </svg>
+            </a>
           <form name ="deposit" class="top-footer__form">
             <select name="deposit" id="deposit-select" class="top-footer__select">
                 <option  value="1.500" label="Stocks $ 1,500">Stocks $ 1,500</option>
@@ -145,21 +147,52 @@
             </ul>
 
         </section>
-      <section id="search" class="tast">
+      <section id="search">
         <form name="search">
-            <input type="text" class="search__input" placeholder="&#xe900 Search">
-        </form>
-
+            <input type="text" class="search__input" placeholder="     Search"> 
+         </form> 
       </section>
-       <sectuon id="instrument" class="test"></sectuon>
-       <section id="assets" class="test"></section>
-       <section id="trade" class="test"></section>
+       <section id="instrument">
+        <h2 class="visually-hidden">instrument</h2>
+         <ul class="instrument__list">
+            <li class="instrument__item">
+                <svg width="24" height="24">
+                    <use href="./icon/sprite.svg#icon-alert"></use>
+                </svg>
+            </li>
+            <li class="instrument__item">
+                <svg width="24" height="24">
+                    <use href="./icon/sprite.svg#icon-star-instument"></use>
+                </svg>
+            </li>
+            <li class="instrument__item">
+                <p class="instrument__aapl">AAPL</p>
+            </li>
+            <li class="instrument__item">
+                <p class="instrument__currency">$148.9</p>
+            </li>
+            <li class="instrument__item">
+                <p class="instrument__procent">+0,39%</p>
+            </li>
+         </ul>
+       </section>
+       <section id="assets">
+        <h2 class="visually-hidden">assets</h2>
+        <table>
+            <td class="assets__td">
+                <span class ="assets__name">AAPL</span>
+                <spanclass class="assets__fullName">Apple Inc.</spanclass>
+
+            </td>
+        </table>
+       </section>
+       <section id="trade"></section>
      
       
     </div>
     
 
 
-    
+
 </body>
 </html>

@@ -3,17 +3,24 @@
     padding-bottom: 16px;
     padding-right: 17px;
     padding-left: 16px;
-
+    border-right: 1px solid $border-color ;
+    border-bottom: 1px solid $border-color;
 }
-// input {
-//     background: url(../../icon/icon-svg/search/search.svg);
-//     background-repeat: no-repeat;
-//     background-position: 100% 0;
-//     height: 20px;
-//     padding-right: 20px;
-//   }
+input::placeholder {
+    background-image: url(../../icon/icon-svg/search/search.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.search__input {
+    padding-left: 14px;
+    width: 340px;
+    height: 38px;
+    font-size: 14px;
+    color: $text-color;
+    line-height: 24px;
+    background-color: $input-bgc;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
 
-//   input::placeholder {
-//     background: url(../../icon/icon-svg/search/search.svg) no-repeat;
-//     padding-right: 20px;
-// }
